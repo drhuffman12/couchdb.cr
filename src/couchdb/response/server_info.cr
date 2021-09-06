@@ -32,5 +32,13 @@ module CouchDB::Response
     property uuid : String
     property version : String
     property vendor : Vendor
+
+    def is_v2?
+      !(/^2\.\d+\.\d+$/.match(version).nil?)
+    end
+
+    def is_v3?
+      !(/^3\.\d+\.\d+$/.match(version).nil?)
+    end
   end
 end

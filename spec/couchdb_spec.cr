@@ -3,14 +3,38 @@ require "./spec_helper"
 require "../src/couchdb/client"
 
 describe CouchDB do
+  it "version in shard.yml matches version in CouchDB::VERSION" do
+    (`shards version .`).strip.should eq(CouchDB::VERSION)
+  end
 
   describe CouchDB::Client do
-    it "should get server info" do
-      client = new_client
-      info = client.server_info
-      info.couchdb.should eq "Welcome"
-      info.version.should match /^2\.\d+\.\d+$/
-      info.vendor.name.should eq "The Apache Software Foundation"
+    context "should get server info re" do
+      it "couchdb" do
+        client = new_client
+        info = client.server_info
+        info.couchdb.should eq "Welcome"
+      end
+
+      context "version" do
+        context "is supported version of" do
+          it "2.x.x or 3.x.x" do
+            client = new_client
+            info = client.server_info
+  
+            # DEBUG: Which CouchDb Version is it?
+            p! info.is_v2? if info.is_v2?
+            p! info.is_v3? if info.is_v3?
+  
+            (info.is_v2? || info.is_v3?).should be_true
+          end
+        end
+      end
+
+      it "vendor.name" do
+        client = new_client
+        info = client.server_info
+        info.vendor.name.should eq "The Apache Software Foundation"
+      end
     end
 
     it "should create a database named testdb" do
