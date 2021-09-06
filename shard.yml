@@ -8,3 +8,8 @@ authors:
 crystal: 1.0.0
 
 license: MIT
+
+dependencies:
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
+    
