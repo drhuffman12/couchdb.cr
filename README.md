@@ -65,7 +65,4 @@ https://docs.couchdb.org/en/2.3.1/api/database/find.html#sort-syntax
 ## Original Project Contributors (what I've forked)
 - [TechMagister](https://github.com/TechMagister) Arnaud Fernandés - creator, maintainer
 - [Schniz](https://github.com/Schniz) Gal Schlezinger - contributor
-
-
-
-
+- [drhuffman12](https://github.com/drhuffman12) Daniel Huffman - contributor
