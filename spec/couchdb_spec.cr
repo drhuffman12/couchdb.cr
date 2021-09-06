@@ -5,6 +5,8 @@ require "../src/couchdb/client"
 describe CouchDB do
   it "version in shard.yml matches version in CouchDB::VERSION" do
     (`shards version .`).strip.should eq(CouchDB::VERSION)
+    CouchDB::VERSION.class.should eq(String)
+    CouchDB::VERSION.size.should be > 1
   end
 
   describe CouchDB::Client do
