@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="crystal_docs.project_version" content="0.4.0">
+<meta name="crystal_docs.project_name" content="couchdb.cr">
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+  <meta name="repository-name" content="couchdb.cr">
+  <title>couchdb.cr 0.4.0</title>
+  <script type="text/javascript">
+  CrystalDocs.base_path = "";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="index.html">
+          couchdb.cr
+        </a>
+      </h1>
+
+      <span class="project-version">
+        0.4.0
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent " data-id="couchdb.cr/CouchDB" data-name="couchdb">
+      <a href="CouchDB.html">CouchDB</a>
+      
+        <ul>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Client" data-name="couchdb::client">
+      <a href="CouchDB/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Database" data-name="couchdb::database">
+      <a href="CouchDB/Database.html">Database</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/FindQuery" data-name="couchdb::findquery">
+      <a href="CouchDB/FindQuery.html">FindQuery</a>
+      
+    </li>
+  
+  <li class="parent " data-id="couchdb.cr/CouchDB/Response" data-name="couchdb::response">
+      <a href="CouchDB/Response.html">Response</a>
+      
+        <ul>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/ActiveTask" data-name="couchdb::response::activetask">
+      <a href="CouchDB/Response/ActiveTask.html">ActiveTask</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/DocumentStatus" data-name="couchdb::response::documentstatus">
+      <a href="CouchDB/Response/DocumentStatus.html">DocumentStatus</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/FindResults" data-name="couchdb::response::findresults(t)">
+      <a href="CouchDB/Response/FindResults.html">FindResults</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/Result" data-name="couchdb::response::result">
+      <a href="CouchDB/Response/Result.html">Result</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/Results" data-name="couchdb::response::results">
+      <a href="CouchDB/Response/Results.html">Results</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/ServerInfo" data-name="couchdb::response::serverinfo">
+      <a href="CouchDB/Response/ServerInfo.html">ServerInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/Status" data-name="couchdb::response::status">
+      <a href="CouchDB/Response/Status.html">Status</a>
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/Response/Vendor" data-name="couchdb::response::vendor">
+      <a href="CouchDB/Response/Vendor.html">Vendor</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="couchdb.cr/CouchDB/URL" data-name="couchdb::url">
+      <a href="CouchDB/URL.html">URL</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<p>-fork of TechMagister/couchdb.cr</p>
+
+<ul><li>fixed "sort"</li><li>updated for crystal 0.35.1 (will update for v1 shortly...circleCI = never. tests updated = shortly)</li><li>CouchDB client written in crystal</li></ul>
+
+<h2><a id="installation" class="anchor" href="#installation">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Installation</h2>
+
+<p>Add this to your application's <code>shard.yml</code>:</p>
+
+<pre><code class="language-yaml">dependencies:
+  couchdb:
+    github: vectorselector/couchdb.cr</code></pre>
+
+<h2><a id="usage" class="anchor" href="#usage">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Usage</h2>
+
+<pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;couchdb&quot;</span>
+
+client <span class="o">=</span> <span class="t">CouchDB</span><span class="t">::</span><span class="t">Client</span>.<span class="k">new</span> <span class="s">&quot;http://127.0.0.1:5984&quot;</span>
+
+info <span class="o">=</span> client.server_info
+info.couchdb <span class="c"># Welcome</span>
+info.version <span class="c"># 2.1.1</span>
+info.vendor.name <span class="c"># The Apache Software Foundation</span>
+</code></pre>
+
+<p>usage overview/example:</p>
+
+<pre><code class="language-crystal">COUCHDB_URL = ENV["COUCHDB_URL"]? || "http://127.0.0.1:5984"
+DB = CouchDB::Client.new COUCHDB_URL
+myQuery = CouchDB::FindQuery.from_json %({"selector":{"user_id":"#{userId}", "$not":{"archived":true} }, "sort":[{"timestamp":"desc"}], "limit":#{limit} })
+myThing = DB.find_document("things", myQuery).docs.not_nil!.first
+ ```
+ 
+"sort" takes an array of  EITHER a String or an object as such [{"fieldname1": "desc"}, {"fieldname2": "asc"}] per CouchDB docs
+https://docs.couchdb.org/en/2.3.1/api/database/find.html#sort-syntax
+
+"skip" is like "limit" and goes outside the "selector"...
+
+## Development
+
+- [x] Get server info
+- [x] Create Database
+- [x] Delete Database
+- [x] List Databases
+- [x] Get new uuid
+- [x] Create Documents
+- [x] Find all the documents
+- [x] Find Documents with criteria
+- [x] Delete Documents
+- [x] Update Documents
+
+## Contributing
+
+1. Fork it ( https://github.com/vectorselector/couchdb/fork )
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
+
+## Original Project Contributors (what I've forked)
+- [TechMagister](https://github.com/TechMagister) Arnaud Fernandés - creator, maintainer
+- [Schniz](https://github.com/Schniz) Gal Schlezinger - contributor
+- [drhuffman12](https://github.com/drhuffman12) Daniel Huffman - contributor</code></pre>
+</div>
+</body>
+</html>
