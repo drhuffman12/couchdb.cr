@@ -3,6 +3,7 @@ require "./couchdb/client"
 require "./couchdb/database"
 require "./couchdb/response"
 require "./couchdb/find_query"
+require "json_mapping"
 
 module CouchDB
 

@@ -1,10 +1,15 @@
 name: couchdb
-version: 0.3.0
+version: 0.4.0
 
 authors:
   - Arnaud Fernandés <arnaud.fernandes@tech-magister.com>
   - fork maintained by vectorselector
 
-crystal: 1.0.0
+# NOTE: Instead of hard-coding version in this file, specify 'works with' elsewise (e.g.: Release notes?)
+# crystal: 1.0.0
 
 license: MIT
+
+dependencies:
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
