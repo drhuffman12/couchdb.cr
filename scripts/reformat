@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-crystal tool format -e lib
